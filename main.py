@@ -191,6 +191,7 @@ if __name__ == "__main__":
         temp_dir = os.path.join(os.path.abspath(args.temp_directory), "temp")
         print(f"Setting temp directory to: {temp_dir}")
         folder_paths.set_temp_directory(temp_dir)
+    # temp 目录清理
     cleanup_temp()
 
     loop = asyncio.new_event_loop()
